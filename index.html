@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="低性价比人生指南：错误建议与高代价决策的反面案例库。先看风险，再看止损。">
+  <meta name="theme-color" content="#f4efe6">
+  <title>低性价比人生指南｜反面案例库</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到案例列表</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="低性价比人生指南首页">
+        <span class="brand-mark">反</span>
+        <span>
+          <strong>低性价比人生指南</strong>
+          <small>失败模式与代价档案</small>
+        </span>
+      </a>
+      <nav class="top-nav" aria-label="主导航">
+        <a href="#methodology">方法</a>
+        <a href="#contribute">贡献</a>
+        <a class="github-link" href="https://github.com/qingchencloud/low-cost-life-guide" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="shell">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">反面案例库 · BETA 01</p>
+        <h1 id="hero-title">看起来聪明，<br><em>实际上很贵。</em></h1>
+        <p class="hero-lede">把那些“省一点、快一点、先做了再说”的建议拆开，记录它们如何变成金钱、时间、健康、关系和机会成本。</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#cases">开始检索 <span>↓</span></a>
+          <a class="text-link" href="#methodology">先看方法</a>
+        </div>
+      </div>
+      <div class="hero-index" aria-label="低性价比指数说明">
+        <div class="index-ring"><span id="heroIndex">—</span><small>/ 100</small></div>
+        <p>当前最高<br><strong>低性价比指数</strong></p>
+        <span class="index-note">只用于排序，不是科学测量</span>
+      </div>
+    </section>
+
+    <section class="notice-bar" aria-label="阅读提示">
+      <span class="notice-dot" aria-hidden="true"></span>
+      <strong>反面示例，请先看风险与止损。</strong>
+      <span>错误建议默认折叠，所有条目均为分析材料，不是行动清单。</span>
+    </section>
+
+    <section class="stats-strip" aria-label="项目统计">
+      <div><span class="stat-number" id="statCases">—</span><span class="stat-label">条案例</span></div>
+      <div><span class="stat-number" id="statCategories">—</span><span class="stat-label">个场景</span></div>
+      <div><span class="stat-number" id="statReviewed">—</span><span class="stat-label">条已复核</span></div>
+      <div><span class="stat-number" id="statUpdated">—</span><span class="stat-label">最后更新</span></div>
+    </section>
+
+    <section id="content" class="workspace" aria-label="案例检索工作区">
+      <aside class="filters" aria-label="筛选条件">
+        <div class="filter-heading">
+          <p class="eyebrow">FILTER / 过滤</p>
+          <button class="reset-button" id="resetFilters" type="button">清空</button>
+        </div>
+        <label class="search-box">
+          <span class="sr-only">搜索案例</span>
+          <input id="searchInput" type="search" placeholder="搜标题、标签或代价…" autocomplete="off">
+          <kbd>/</kbd>
+        </label>
+        <div class="filter-group">
+          <span class="filter-label">按场景</span>
+          <div id="categoryFilters" class="filter-list"></div>
+        </div>
+        <div class="filter-group">
+          <span class="filter-label">按风险</span>
+          <div id="riskFilters" class="filter-list compact-list"></div>
+        </div>
+        <div class="filter-group">
+          <span class="filter-label">按证据</span>
+          <div class="segmented" id="evidenceFilters" role="group" aria-label="证据等级">
+            <button class="segment active" type="button" data-value="all">全部</button>
+            <button class="segment" type="button" data-value="A">A</button>
+            <button class="segment" type="button" data-value="B">B</button>
+            <button class="segment" type="button" data-value="C">C</button>
+          </div>
+        </div>
+        <div class="filter-group">
+          <span class="filter-label">按严重度</span>
+          <div class="severity-list">
+            <label><input type="checkbox" value="critical" data-severity> 严重</label>
+            <label><input type="checkbox" value="high" data-severity> 高</label>
+            <label><input type="checkbox" value="medium" data-severity> 中</label>
+            <label><input type="checkbox" value="low" data-severity> 低</label>
+          </div>
+        </div>
+        <div class="filter-aside">
+          <span>提示</span>
+          <p>高指数不代表“坏人”，而是代表这个建议的隐藏成本更大、回头路更窄。</p>
+        </div>
+      </aside>
+
+      <div class="results" id="cases">
+        <div class="results-head">
+          <div>
+            <p class="eyebrow">CASES / 案例</p>
+            <h2>先看最容易<br>被低估的代价</h2>
+          </div>
+          <label class="sort-select">排序
+            <select id="sortSelect">
+              <option value="index">低性价比指数</option>
+              <option value="severity">严重度</option>
+              <option value="newest">最近更新</option>
+              <option value="evidence">证据强度</option>
+            </select>
+          </label>
+        </div>
+        <div class="featured-grid" id="featuredGrid"></div>
+        <div class="all-results-head">
+          <span id="resultCount">—</span>
+          <span class="result-rule"></span>
+          <span class="muted">点击卡片查看完整复盘</span>
+        </div>
+        <div class="case-list" id="caseList" aria-live="polite"></div>
+        <div class="empty-state" id="emptyState" hidden>
+          <strong>没有找到相符案例。</strong>
+          <p>换个关键词，或清除筛选条件。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="methodology" class="method-section anchor-section">
+      <div class="section-label"><span>01</span><span>METHOD / 方法</span></div>
+      <div class="method-grid">
+        <div>
+          <h2>把“后悔”拆成<br><em>可以复盘的变量。</em></h2>
+          <p>每条案例把表面收益、真实成本、不可逆性和风险放在同一张卡片里。我们不替你做决定，只把被省略的代价补回来。</p>
+          <a class="text-link" href="docs/methodology.md">阅读完整方法 ↗</a>
+        </div>
+        <div class="method-table">
+          <div><span>表面收益</span><strong>0—5</strong><small>当下看起来省了什么</small></div>
+          <div><span>隐藏成本</span><strong>0—5</strong><small>钱、时间、机会和声誉</small></div>
+          <div><span>回头难度</span><strong>0—3</strong><small>越晚停，代价越大</small></div>
+          <div><span>证据等级</span><strong>A / B / C</strong><small>官方、研究、待核实</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contribute" class="contribute-section anchor-section">
+      <div>
+        <p class="eyebrow">CONTRIBUTE / 共建</p>
+        <h2>你踩过的坑，<br>可以变成别人的刹车。</h2>
+      </div>
+      <div class="contribute-copy">
+        <p>提交一个真实、匿名、可复盘的反面案例：先写诱因，再写代价；先给证据，再给止损。高风险主题请只描述识别信号和修复路径。</p>
+        <a class="button button-light" href="docs/contribute.md">查看提交模板 <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer shell">
+    <div><strong>低性价比人生指南</strong><span>反面案例与高代价决策档案</span></div>
+    <div><span>独立项目 · 内容持续核实</span><a href="https://github.com/qingchencloud/low-cost-life-guide" target="_blank" rel="noreferrer">查看 GitHub ↗</a></div>
+  </footer>
+
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+  <aside class="detail-drawer" id="detailDrawer" aria-hidden="true" aria-labelledby="detailTitle" role="dialog">
+    <div class="drawer-topline"><span>CASE FILE / 反面档案</span><button id="closeDrawer" type="button" aria-label="关闭案例详情">Esc&nbsp; ×</button></div>
+    <div class="drawer-scroll" id="drawerContent"></div>
+  </aside>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

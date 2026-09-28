@@ -1,0 +1,10 @@
+{
+  "name": "low-cost-life-guide",
+  "version": "0.1.0",
+  "private": true,
+  "description": "错误建议与高代价决策的反面案例库",
+  "scripts": {
+    "validate": "python scripts/validate.py",
+    "serve": "python -m http.server 4173"
+  }
+}
