@@ -26,6 +26,7 @@ from reportlab.lib.pagesizes import A4, A5
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import mm
 from reportlab.pdfbase import pdfmetrics
+from reportlab.pdfbase.cidfonts import UnicodeCIDFont
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import (
     BaseDocTemplate,
@@ -80,10 +81,20 @@ FONT_CANDIDATES = {
 
 
 def register_fonts() -> tuple[str, str]:
+    def cid_fallback() -> tuple[str, str]:
+        # STSong-Light is a portable CID font available in ReportLab itself;
+        # unlike Helvetica it can encode Chinese text on Linux CI runners.
+        try:
+            pdfmetrics.registerFont(UnicodeCIDFont("STSong-Light"))
+            return "STSong-Light", "STSong-Light"
+        except Exception as exc:  # pragma: no cover - defensive fallback
+            print(f"Warning: built-in Chinese font unavailable ({exc}); using Helvetica.")
+            return "Helvetica", "Helvetica-Bold"
+
     regular_path = next((p for p in FONT_CANDIDATES["regular"] if p.exists()), None)
     bold_path = next((p for p in FONT_CANDIDATES["bold"] if p.exists()), None)
     if not regular_path:
-        return "Helvetica", "Helvetica-Bold"
+        return cid_fallback()
     try:
         regular_kwargs = {"subfontIndex": 0} if regular_path.suffix.lower() == ".ttc" else {}
         pdfmetrics.registerFont(TTFont("GuideSans", str(regular_path), **regular_kwargs))
@@ -93,8 +104,11 @@ def register_fonts() -> tuple[str, str]:
             return "GuideSans", "GuideSansBold"
         return "GuideSans", "GuideSans"
     except Exception as exc:  # pragma: no cover - platform-dependent font support
-        print(f"Warning: Chinese font registration failed ({exc}); using Helvetica.")
-        return "Helvetica", "Helvetica-Bold"
+        print(f"Warning: Chinese font registration failed ({exc}); using built-in STSong-Light.")
+        # Some Linux runners ship Noto CJK as PostScript-outline TTC files that
+        # ReportLab cannot embed. Use the built-in CID fallback so CI PDFs
+        # remain readable and text-extractable.
+        return cid_fallback()
 
 
 def esc(value: object) -> str:
