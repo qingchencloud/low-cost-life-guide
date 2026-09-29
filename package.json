@@ -5,6 +5,9 @@
   "description": "错误建议与高代价决策的反面案例库",
   "scripts": {
     "validate": "python scripts/validate.py",
-    "serve": "python -m http.server 4173"
+    "serve": "python -m http.server 4173",
+    "build:pdf": "python scripts/build_pdf.py",
+    "validate:pdf": "python scripts/validate_pdf.py",
+    "build:book": "python scripts/build_book.py"
   }
 }

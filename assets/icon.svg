@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="反面案例库图标">
+  <rect width="512" height="512" rx="108" fill="#1d1d1b"/>
+  <circle cx="256" cy="256" r="174" fill="#d84b2f"/>
+  <path d="M178 174h156v42h-55v132h-47V216h-54z" fill="#f4efe6"/>
+  <path d="M178 362h156v-35H178z" fill="#f4efe6" opacity=".72"/>
+</svg>

@@ -1,0 +1,20 @@
+{
+  "categories": [
+    {"key":"money","label":"消费与财务","chapter":"01-消费与财务"},
+    {"key":"work","label":"职场与学习","chapter":"02-职场与学习"},
+    {"key":"tools","label":"工具与效率","chapter":"03-工具与效率"},
+    {"key":"privacy","label":"信息与隐私","chapter":"04-信息与隐私"},
+    {"key":"health","label":"健康误区","chapter":"05-健康误区"},
+    {"key":"decisions","label":"低效决策","chapter":"06-低效决策"},
+    {"key":"relationships","label":"关系与沟通","chapter":"07-关系与沟通"}
+  ],
+  "risks": [
+    {"key":"money","label":"钱"},
+    {"key":"time","label":"时间"},
+    {"key":"opportunity","label":"机会"},
+    {"key":"privacy","label":"隐私"},
+    {"key":"health","label":"健康"},
+    {"key":"legal","label":"法律"},
+    {"key":"reputation","label":"声誉"}
+  ]
+}

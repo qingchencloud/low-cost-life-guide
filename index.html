@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="低性价比人生指南：错误建议与高代价决策的反面案例库。先看风险，再看止损。">
   <meta name="theme-color" content="#f4efe6">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
   <title>低性价比人生指南｜反面案例库</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -24,6 +29,15 @@
         <a href="#contribute">贡献</a>
         <a class="github-link" href="https://github.com/qingchencloud/low-cost-life-guide" target="_blank" rel="noreferrer">GitHub ↗</a>
       </nav>
+      <details class="mobile-menu">
+        <summary aria-label="打开菜单">菜单</summary>
+        <div class="mobile-menu-panel">
+          <a href="#methodology">方法</a>
+          <a href="#contribute">贡献</a>
+          <a href="downloads/low-cost-life-guide.pdf" download>下载 PDF</a>
+          <a href="https://github.com/qingchencloud/low-cost-life-guide" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </div>
+      </details>
     </div>
   </header>
 
@@ -36,6 +50,8 @@
         <div class="hero-actions">
           <a class="button button-dark" href="#cases">开始检索 <span>↓</span></a>
           <a class="text-link" href="#methodology">先看方法</a>
+          <a class="text-link" href="downloads/low-cost-life-guide.pdf" download>下载 PDF ↗</a>
+          <button class="text-link print-link" id="printButton" type="button">打印当前列表</button>
         </div>
       </div>
       <div class="hero-index" aria-label="低性价比指数说明">
@@ -126,6 +142,20 @@
         <div class="empty-state" id="emptyState" hidden>
           <strong>没有找到相符案例。</strong>
           <p>换个关键词，或清除筛选条件。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="download-section">
+      <div>
+        <p class="eyebrow">READ OFFLINE / 离线阅读</p>
+        <h2>把反面案例<br>带在身边。</h2>
+      </div>
+      <div class="download-copy">
+        <p>网页适合检索，PDF 适合连续阅读。当前提供 A4 打印版和 A5 移动阅读版，内容由同一份案例数据生成。</p>
+        <div class="download-actions">
+          <a class="button button-dark" href="downloads/low-cost-life-guide.pdf" download>A4 PDF <span>↓</span></a>
+          <a class="button button-outline" href="downloads/low-cost-life-guide-a5.pdf" download>A5 / 手机 PDF <span>↓</span></a>
         </div>
       </div>
     </section>

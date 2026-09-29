@@ -8,17 +8,22 @@
 
 ## 在线阅读
 
-- GitHub Pages：启用仓库 Pages 后访问 `https://qingchencloud.github.io/low-cost-life-guide/`
+- GitHub Pages：<https://qingchencloud.github.io/low-cost-life-guide/>
+- A4 PDF：[`downloads/low-cost-life-guide.pdf`](downloads/low-cost-life-guide.pdf)
+- A5 / 手机 PDF：[`downloads/low-cost-life-guide-a5.pdf`](downloads/low-cost-life-guide-a5.pdf)
 - 本地预览：`python -m http.server 4173`，打开 <http://localhost:4173>
+- 手机安装：用移动浏览器打开在线版，通过“添加到主屏幕”安装 PWA；首次打开后可在弱网下继续查看已缓存内容。
 
 ## 现在有什么
 
-- 12 条可检索反面案例，覆盖 7 个场景和 7 类损失
+- 24 条可检索反面案例，覆盖 7 个场景和 7 类损失
 - 全文搜索、场景/风险/证据/严重度筛选
 - 低性价比指数、证据等级和更新时间
 - 案例详情抽屉：表面收益 → 隐藏成本 → 失败机制 → 证据 → 止损 → 稳妥替代
 - URL 查询参数和 `#case=slug` 深链，可直接分享筛选结果或案例
 - 纯静态 HTML/CSS/JavaScript，无后端、无运行时依赖
+- A4 打印版和 A5 移动阅读版 PDF，使用同一份 JSON 数据生成
+- PWA manifest + Service Worker，支持添加到主屏幕和弱网缓存
 - GitHub Pages 工作流和数据校验脚本
 
 ## 快速开始
@@ -39,6 +44,14 @@ python scripts/validate.py
 npm run validate
 ```
 
+生成 PDF（需要 `pip install -r requirements-pdf.txt`）：
+
+```powershell
+python scripts/build_pdf.py
+```
+
+构建脚本会生成 `downloads/low-cost-life-guide.pdf`（A4）和 `downloads/low-cost-life-guide-a5.pdf`（A5 / 手机阅读）。
+
 ## 目录
 
 ```text
@@ -46,12 +59,21 @@ npm run validate
 ├─ index.html                 # 静态入口和信息架构
 ├─ styles.css                # 编辑型、纸张感视觉系统
 ├─ app.js                    # 搜索、筛选、排序、详情抽屉
+├─ manifest.webmanifest      # PWA 安装信息
+├─ sw.js                     # 弱网缓存与更新策略
+├─ assets/icon.svg           # PWA 矢量图标
+├─ assets/icon-192.png       # PWA 安装图标
+├─ assets/icon-512.png       # PWA 安装图标
+├─ downloads/                # A4 / A5 PDF 阅读版
 ├─ data/cases.json           # 案例单一数据源
+├─ data/taxonomy.json        # 分类、章节与风险标签
 ├─ book/                     # 按章节阅读的 Markdown 文本
 ├─ docs/methodology.md       # 指数、证据和编辑方法
 ├─ docs/contribute.md        # 提交流程和审核清单
 ├─ templates/case.md         # 新案例模板
 ├─ scripts/validate.py       # 无依赖数据校验
+├─ scripts/build_pdf.py      # 从 JSON 生成 A4/A5 PDF
+├─ requirements-pdf.txt      # PDF 构建依赖
 └─ .github/workflows/pages.yml
 ```
 

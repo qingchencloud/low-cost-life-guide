@@ -15,9 +15,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
+      - name: Install PDF toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-cjk
+          python -m pip install -r requirements-pdf.txt
+      - name: Generate book chapters
+        run: python scripts/build_book.py
       - name: Validate case data
         run: python scripts/validate.py
+      - name: Build and validate PDFs
+        run: |
+          python scripts/build_pdf.py
+          python scripts/validate_pdf.py
 
   deploy:
     if: github.event_name != 'pull_request'
@@ -32,7 +43,16 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
+      - name: Install PDF toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-cjk
+          python -m pip install -r requirements-pdf.txt
+      - name: Generate book chapters
+        run: python scripts/build_book.py
+      - name: Build PDFs for Pages
+        run: python scripts/build_pdf.py
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload static site

@@ -9,6 +9,7 @@ from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "cases.json"
+TAXONOMY = ROOT / "data" / "taxonomy.json"
 REQUIRED = {
     "id", "slug", "title", "summary", "category", "category_key", "risk_type",
     "tags", "severity", "likelihood", "reversibility", "horizon", "evidence_grade",
@@ -31,11 +32,15 @@ def main() -> int:
         fail(f"missing {DATA}")
     try:
         cases = json.loads(DATA.read_text(encoding="utf-8"))
-    except json.JSONDecodeError as exc:
-        fail(f"invalid JSON: {exc}")
+        taxonomy = json.loads(TAXONOMY.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError) as exc:
+        fail(f"invalid data JSON: {exc}")
     if not isinstance(cases, list) or not cases:
         fail("cases.json must contain a non-empty array")
 
+    taxonomy_by_key = {item["key"]: item for item in taxonomy.get("categories", [])}
+    if not taxonomy_by_key:
+        fail("taxonomy.json has no categories")
     ids: set[str] = set()
     slugs: set[str] = set()
     for index, case in enumerate(cases, start=1):
@@ -57,6 +62,11 @@ def main() -> int:
             fail(f"{case['slug']}: invalid severity")
         if not set(case["risk_type"]).issubset(VALID_RISKS):
             fail(f"{case['slug']}: unknown risk_type")
+        taxonomy_item = taxonomy_by_key.get(case["category_key"])
+        if not taxonomy_item:
+            fail(f"{case['slug']}: category_key missing from taxonomy")
+        if taxonomy_item["label"] != case["category"]:
+            fail(f"{case['slug']}: category label differs from taxonomy")
         score = case["score"]
         for field in ("apparent_gain", "cost"):
             if not isinstance(score.get(field), int) or not 0 <= score[field] <= 5:
@@ -84,6 +94,9 @@ def main() -> int:
         for related in case["related_cases"]:
             if related not in slugs:
                 fail(f"{case['slug']}: unknown related case {related}")
+        chapter_path = ROOT / "book" / f"{case['chapter']}.md"
+        if not chapter_path.exists() or case["id"] not in chapter_path.read_text(encoding="utf-8"):
+            fail(f"{case['slug']}: generated book chapter is missing the case")
 
     print(f"Validated {len(cases)} cases, {len(set(c['category_key'] for c in cases))} categories.")
     print("Schema, score ranges, evidence URLs and cross-references are valid.")

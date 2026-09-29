@@ -6,8 +6,16 @@
     "summary": "只看标价，不算返工、替换和停摆成本，最后把便宜买成了两次。",
     "category": "消费与财务",
     "category_key": "money",
-    "risk_type": ["money", "time", "opportunity"],
-    "tags": ["低价诱惑", "总拥有成本", "重复购买"],
+    "risk_type": [
+      "money",
+      "time",
+      "opportunity"
+    ],
+    "tags": [
+      "低价诱惑",
+      "总拥有成本",
+      "重复购买"
+    ],
     "severity": "medium",
     "likelihood": "high",
     "reversibility": "medium",
@@ -31,7 +39,11 @@
       "用低价的确定性换取质量的不确定性。"
     ],
     "impact": {
-      "affected_groups": ["预算紧张的个人", "小团队", "临时项目"],
+      "affected_groups": [
+        "预算紧张的个人",
+        "小团队",
+        "临时项目"
+      ],
       "note": "具体损失取决于使用频率、替换难度和失败后果。"
     },
     "score": {
@@ -60,7 +72,10 @@
       "能否在 24 小时内替换或回滚？",
       "是否有开放格式、保修或退出路径？"
     ],
-    "related_cases": ["free-trial-auto-renewal", "tool-system-before-problem"],
+    "related_cases": [
+      "free-trial-auto-renewal",
+      "tool-system-before-problem"
+    ],
     "chapter": "01-消费与财务",
     "updated_at": "2026-09-28"
   },
@@ -71,8 +86,15 @@
     "summary": "被低门槛吸引，却忘了订阅会自动续费，最后为没有使用的服务买单。",
     "category": "消费与财务",
     "category_key": "money",
-    "risk_type": ["money", "time"],
-    "tags": ["自动续费", "免费试用", "负面选项"],
+    "risk_type": [
+      "money",
+      "time"
+    ],
+    "tags": [
+      "自动续费",
+      "免费试用",
+      "负面选项"
+    ],
     "severity": "medium",
     "likelihood": "high",
     "reversibility": "easy",
@@ -96,7 +118,11 @@
       "忽略账单通知和退款边界。"
     ],
     "impact": {
-      "affected_groups": ["多设备用户", "家庭共享账户", "经常试用软件的人"],
+      "affected_groups": [
+        "多设备用户",
+        "家庭共享账户",
+        "经常试用软件的人"
+      ],
       "note": "不同服务的续费和退款规则不同，应以实际条款为准。"
     },
     "score": {
@@ -125,7 +151,10 @@
       "取消路径是否在当前设备上可完成？",
       "退款和账单通知的边界是什么？"
     ],
-    "related_cases": ["emergency-fund-speculation", "low-price-repeat-buy"],
+    "related_cases": [
+      "emergency-fund-speculation",
+      "low-price-repeat-buy"
+    ],
     "chapter": "01-消费与财务",
     "updated_at": "2026-09-28"
   },
@@ -136,8 +165,15 @@
     "summary": "为了追求更高收益，把近期要用的钱暴露在无法预测的价格波动中。",
     "category": "消费与财务",
     "category_key": "money",
-    "risk_type": ["money", "opportunity"],
-    "tags": ["应急金", "现金流", "高波动"],
+    "risk_type": [
+      "money",
+      "opportunity"
+    ],
+    "tags": [
+      "应急金",
+      "现金流",
+      "高波动"
+    ],
     "severity": "high",
     "likelihood": "medium",
     "reversibility": "hard",
@@ -161,7 +197,11 @@
       "忽略流动性、税费和变现损失。"
     ],
     "impact": {
-      "affected_groups": ["收入波动的人", "负债较高的人", "缺乏现金缓冲的家庭"],
+      "affected_groups": [
+        "收入波动的人",
+        "负债较高的人",
+        "缺乏现金缓冲的家庭"
+      ],
       "note": "资产配置需结合个人现金流、风险承受能力和当地规则。"
     },
     "score": {
@@ -190,7 +230,10 @@
       "下跌 30% 时是否仍能正常生活？",
       "紧急出售会产生哪些费用和税务后果？"
     ],
-    "related_cases": ["free-trial-auto-renewal", "sunk-cost-face"],
+    "related_cases": [
+      "free-trial-auto-renewal",
+      "sunk-cost-face"
+    ],
     "chapter": "01-消费与财务",
     "updated_at": "2026-09-28"
   },
@@ -201,8 +244,16 @@
     "summary": "收藏数量不断增长，真实能力、作品和反馈却没有同步增加。",
     "category": "职场与学习",
     "category_key": "work",
-    "risk_type": ["money", "time", "opportunity"],
-    "tags": ["囤课", "证书", "学习幻觉"],
+    "risk_type": [
+      "money",
+      "time",
+      "opportunity"
+    ],
+    "tags": [
+      "囤课",
+      "证书",
+      "学习幻觉"
+    ],
     "severity": "medium",
     "likelihood": "high",
     "reversibility": "easy",
@@ -226,7 +277,11 @@
       "没有设置可交付的学习终点。"
     ],
     "impact": {
-      "affected_groups": ["转行者", "应届生", "长期自学者"],
+      "affected_groups": [
+        "转行者",
+        "应届生",
+        "长期自学者"
+      ],
       "note": "证书在部分职业中是必要门槛，但仍需结合岗位要求验证。"
     },
     "score": {
@@ -255,7 +310,10 @@
       "谁会给我反馈？",
       "如果三个月后仍没有产出，我会如何调整？"
     ],
-    "related_cases": ["overtime-as-output", "tool-system-before-problem"],
+    "related_cases": [
+      "overtime-as-output",
+      "tool-system-before-problem"
+    ],
     "chapter": "02-职场与学习",
     "updated_at": "2026-09-28"
   },
@@ -266,8 +324,17 @@
     "summary": "在线时间越来越长，结果、质量和可复用资产却没有明确增加。",
     "category": "职场与学习",
     "category_key": "work",
-    "risk_type": ["time", "health", "opportunity", "reputation"],
-    "tags": ["加班", "忙碌幻觉", "成果管理"],
+    "risk_type": [
+      "time",
+      "health",
+      "opportunity",
+      "reputation"
+    ],
+    "tags": [
+      "加班",
+      "忙碌幻觉",
+      "成果管理"
+    ],
     "severity": "high",
     "likelihood": "medium",
     "reversibility": "hard",
@@ -291,7 +358,11 @@
       "短期可见的忙碌掩盖了长期能力和系统问题。"
     ],
     "impact": {
-      "affected_groups": ["知识工作者", "项目负责人", "高压行业从业者"],
+      "affected_groups": [
+        "知识工作者",
+        "项目负责人",
+        "高压行业从业者"
+      ],
       "note": "紧急阶段的短期加班与长期依赖加班是不同问题。"
     },
     "score": {
@@ -320,7 +391,10 @@
       "结果如何被验证和复用？",
       "如果不继续加班，哪个系统问题需要被修复？"
     ],
-    "related_cases": ["credential-hoarding", "tool-system-before-problem"],
+    "related_cases": [
+      "credential-hoarding",
+      "tool-system-before-problem"
+    ],
     "chapter": "02-职场与学习",
     "updated_at": "2026-09-28"
   },
@@ -331,8 +405,16 @@
     "summary": "工具、模板和自动化越来越多，真正重要的任务却没有更快完成。",
     "category": "工具与效率",
     "category_key": "tools",
-    "risk_type": ["time", "opportunity", "reputation"],
-    "tags": ["生产力系统", "过度优化", "工具迁移"],
+    "risk_type": [
+      "time",
+      "opportunity",
+      "reputation"
+    ],
+    "tags": [
+      "生产力系统",
+      "过度优化",
+      "工具迁移"
+    ],
     "severity": "medium",
     "likelihood": "high",
     "reversibility": "medium",
@@ -356,7 +438,11 @@
       "用可控的配置工作逃避不可控的交付工作。"
     ],
     "impact": {
-      "affected_groups": ["独立开发者", "小团队", "知识管理重度用户"],
+      "affected_groups": [
+        "独立开发者",
+        "小团队",
+        "知识管理重度用户"
+      ],
       "note": "稳定重复的流程才适合自动化。"
     },
     "score": {
@@ -385,7 +471,10 @@
       "不搭它，任务是否真的无法完成？",
       "迁移和退出成本是否可控？"
     ],
-    "related_cases": ["low-price-repeat-buy", "credential-hoarding"],
+    "related_cases": [
+      "low-price-repeat-buy",
+      "credential-hoarding"
+    ],
     "chapter": "03-工具与效率",
     "updated_at": "2026-09-28"
   },
@@ -396,8 +485,16 @@
     "summary": "为了方便调试或赶进度，把短期方便换成长期的凭证暴露风险。",
     "category": "信息与隐私",
     "category_key": "privacy",
-    "risk_type": ["privacy", "money", "reputation"],
-    "tags": ["密钥泄露", "公开仓库", "凭证轮换"],
+    "risk_type": [
+      "privacy",
+      "money",
+      "reputation"
+    ],
+    "tags": [
+      "密钥泄露",
+      "公开仓库",
+      "凭证轮换"
+    ],
     "severity": "critical",
     "likelihood": "medium",
     "reversibility": "hard",
@@ -421,7 +518,11 @@
       "没有在提交前做 secret scanning。"
     ],
     "impact": {
-      "affected_groups": ["开源项目维护者", "独立开发者", "学生团队"],
+      "affected_groups": [
+        "开源项目维护者",
+        "独立开发者",
+        "学生团队"
+      ],
       "note": "具体处置需遵循服务商的凭证撤销和事故响应流程。"
     },
     "score": {
@@ -450,7 +551,10 @@
       "提交历史和构建日志是否也会保存它？",
       "泄露后能否在几分钟内撤销？"
     ],
-    "related_cases": ["headline-only-decisions", "tool-system-before-problem"],
+    "related_cases": [
+      "headline-only-decisions",
+      "tool-system-before-problem"
+    ],
     "chapter": "04-信息与隐私",
     "updated_at": "2026-09-28"
   },
@@ -461,8 +565,16 @@
     "summary": "为了省一次咨询或检查，依据未经核实的信息延误正规判断。",
     "category": "健康误区",
     "category_key": "health",
-    "risk_type": ["health", "money", "time"],
-    "tags": ["健康谣言", "伪科学", "延误就医"],
+    "risk_type": [
+      "health",
+      "money",
+      "time"
+    ],
+    "tags": [
+      "健康谣言",
+      "伪科学",
+      "延误就医"
+    ],
     "severity": "critical",
     "likelihood": "medium",
     "reversibility": "hard",
@@ -486,7 +598,11 @@
       "把“不确定”误读成“应该先试”。"
     ],
     "impact": {
-      "affected_groups": ["慢性病患者", "照护者", "信息焦虑人群"],
+      "affected_groups": [
+        "慢性病患者",
+        "照护者",
+        "信息焦虑人群"
+      ],
       "note": "紧急症状应直接遵循当地急救和医疗流程。"
     },
     "score": {
@@ -515,7 +631,10 @@
       "是否说明适用人群、风险和禁忌？",
       "延迟正规评估的代价是什么？"
     ],
-    "related_cases": ["headline-only-decisions", "sunk-cost-face"],
+    "related_cases": [
+      "headline-only-decisions",
+      "sunk-cost-face"
+    ],
     "chapter": "05-健康误区",
     "updated_at": "2026-09-28"
   },
@@ -526,8 +645,17 @@
     "summary": "已经投入的钱、时间和身份感，变成继续投入的理由。",
     "category": "低效决策",
     "category_key": "decisions",
-    "risk_type": ["money", "time", "opportunity", "reputation"],
-    "tags": ["沉没成本", "面子", "止损"],
+    "risk_type": [
+      "money",
+      "time",
+      "opportunity",
+      "reputation"
+    ],
+    "tags": [
+      "沉没成本",
+      "面子",
+      "止损"
+    ],
     "severity": "high",
     "likelihood": "high",
     "reversibility": "hard",
@@ -551,7 +679,11 @@
       "把止损误认为否定自我。"
     ],
     "impact": {
-      "affected_groups": ["创业者", "投资者", "长期项目负责人"],
+      "affected_groups": [
+        "创业者",
+        "投资者",
+        "长期项目负责人"
+      ],
       "note": "任何继续投入都应基于未来增量收益，而不是过去投入。"
     },
     "score": {
@@ -580,7 +712,10 @@
       "新增投入能改变哪一个可验证结果？",
       "退出后哪些资产可以迁移？"
     ],
-    "related_cases": ["emergency-fund-speculation", "overtime-as-output"],
+    "related_cases": [
+      "emergency-fund-speculation",
+      "overtime-as-output"
+    ],
     "chapter": "06-低效决策",
     "updated_at": "2026-09-28"
   },
@@ -591,8 +726,17 @@
     "summary": "把压缩后的情绪和结论，当成完整事实、上下文与证据。",
     "category": "信息与隐私",
     "category_key": "privacy",
-    "risk_type": ["time", "money", "reputation", "health"],
-    "tags": ["标题党", "信息茧房", "来源核查"],
+    "risk_type": [
+      "time",
+      "money",
+      "reputation",
+      "health"
+    ],
+    "tags": [
+      "标题党",
+      "信息茧房",
+      "来源核查"
+    ],
     "severity": "medium",
     "likelihood": "high",
     "reversibility": "medium",
@@ -616,7 +760,11 @@
       "让情绪先完成判断，再寻找支持自己的证据。"
     ],
     "impact": {
-      "affected_groups": ["高频社交媒体用户", "信息焦虑人群", "需要快速决策的团队"],
+      "affected_groups": [
+        "高频社交媒体用户",
+        "信息焦虑人群",
+        "需要快速决策的团队"
+      ],
       "note": "快讯可以用于发现问题，不应自动升级为行动结论。"
     },
     "score": {
@@ -645,7 +793,10 @@
       "哪些关键数字和限制条件被省略了？",
       "有没有反方来源或相反案例？"
     ],
-    "related_cases": ["health-rumor-treatment", "public-repo-secret"],
+    "related_cases": [
+      "health-rumor-treatment",
+      "public-repo-secret"
+    ],
     "chapter": "04-信息与隐私",
     "updated_at": "2026-09-28"
   },
@@ -656,8 +807,16 @@
     "summary": "把不安全感包装成测试，让对方用金钱、服从或持续解释证明感情。",
     "category": "关系与沟通",
     "category_key": "relationships",
-    "risk_type": ["money", "time", "reputation"],
-    "tags": ["关系测试", "边界", "借钱"],
+    "risk_type": [
+      "money",
+      "time",
+      "reputation"
+    ],
+    "tags": [
+      "关系测试",
+      "边界",
+      "借钱"
+    ],
     "severity": "high",
     "likelihood": "medium",
     "reversibility": "hard",
@@ -681,7 +840,11 @@
       "忽略对方的财务、情绪和安全边界。"
     ],
     "impact": {
-      "affected_groups": ["亲密关系中的双方", "朋友与合伙人", "容易焦虑的人群"],
+      "affected_groups": [
+        "亲密关系中的双方",
+        "朋友与合伙人",
+        "容易焦虑的人群"
+      ],
       "note": "涉及威胁、控制或财务剥削时，应优先保护安全并寻求支持。"
     },
     "score": {
@@ -710,7 +873,10 @@
       "能否用一句直接的话提出需求？",
       "对方拒绝后，我是否仍尊重其边界？"
     ],
-    "related_cases": ["sunk-cost-face", "headline-only-decisions"],
+    "related_cases": [
+      "sunk-cost-face",
+      "headline-only-decisions"
+    ],
     "chapter": "07-关系与沟通",
     "updated_at": "2026-09-28"
   },
@@ -719,10 +885,19 @@
     "slug": "no-contract-project",
     "title": "为了尽快开工，长期项目不写清合同和验收",
     "summary": "把“先做起来”当成效率，最后把范围、付款和责任留给争议解决。",
-    "category": "职业与创业",
+    "category": "职场与学习",
     "category_key": "work",
-    "risk_type": ["money", "time", "legal", "reputation"],
-    "tags": ["合同", "验收", "创业风险"],
+    "risk_type": [
+      "money",
+      "time",
+      "legal",
+      "reputation"
+    ],
+    "tags": [
+      "合同",
+      "验收",
+      "创业风险"
+    ],
     "severity": "high",
     "likelihood": "medium",
     "reversibility": "hard",
@@ -746,7 +921,11 @@
       "把证据留在聊天记录里，难以形成完整时间线。"
     ],
     "impact": {
-      "affected_groups": ["自由职业者", "小型工作室", "初创团队"],
+      "affected_groups": [
+        "自由职业者",
+        "小型工作室",
+        "初创团队"
+      ],
       "note": "具体合同和维权要求受所在地法律影响。"
     },
     "score": {
@@ -775,8 +954,971 @@
       "新增需求如何计价和延期？",
       "对方未付款或项目终止时怎么办？"
     ],
-    "related_cases": ["overtime-as-output", "sunk-cost-face"],
+    "related_cases": [
+      "overtime-as-output",
+      "sunk-cost-face"
+    ],
     "chapter": "02-职场与学习",
     "updated_at": "2026-09-28"
+  },
+  {
+    "id": "C13",
+    "slug": "pretax-income-illusion",
+    "title": "把税前报价当成最终到手价",
+    "summary": "看到一份更高的报价就立刻承诺长期支出，却没有先算税费、社保、平台抽成和现金流。",
+    "category": "消费与财务",
+    "category_key": "money",
+    "risk_type": [
+      "money",
+      "time",
+      "opportunity"
+    ],
+    "tags": [
+      "税前收入",
+      "现金流",
+      "总成本"
+    ],
+    "severity": "high",
+    "likelihood": "medium",
+    "reversibility": "hard",
+    "horizon": "long_term",
+    "evidence_grade": "C",
+    "confidence": "medium",
+    "status": "published",
+    "warning": "反面示例｜先算可支配现金流，再决定长期承诺。",
+    "wrong_advice": "账面收入变高了，就可以按新收入水平立刻升级生活。",
+    "scenario": "接单、换工作、做副业或开店时，只看收入数字，不看到账节奏和固定成本。",
+    "why_attractive": "高收入数字能迅速制造升级生活的正当性；扣除项和延迟到账则不容易被第一眼看见。",
+    "hidden_costs": {
+      "money": "税费、社保、平台服务费、退款和坏账会降低可支配收入。",
+      "time": "对账、催款和补材料占用额外时间。",
+      "opportunity": "固定支出升级后，失去转向和休息的缓冲。",
+      "other": "收入波动被稳定生活方式放大。"
+    },
+    "failure_mechanism": [
+      "把毛收入当净收入。",
+      "把一次性高峰当成长期均值。",
+      "在现金流未稳定前锁定不可逆支出。"
+    ],
+    "impact": {
+      "affected_groups": [
+        "自由职业者",
+        "销售与佣金岗位",
+        "创业早期团队"
+      ],
+      "note": "税费和合同规则受所在地与身份影响。"
+    },
+    "score": {
+      "apparent_gain": 4,
+      "cost": 5,
+      "irreversibility_penalty": 2,
+      "low_value_index": 87
+    },
+    "evidence": [
+      {
+        "grade": "C",
+        "type": "case_review",
+        "title": "现金流复盘：从报价到可支配收入",
+        "url": "",
+        "note": "经验性案例；具体税务问题应以所在地官方口径为准。"
+      }
+    ],
+    "stop_loss": [
+      "把收入拆成税前、到账、可自由支配三个数字。",
+      "连续三个月现金流稳定后再升级固定支出。",
+      "为退款、空档期和延迟结算保留缓冲。"
+    ],
+    "safer_alternative": "先按保守净收入做预算，把增量收入分成缓冲、税费和长期目标。",
+    "decision_checklist": [
+      "这笔收入何时到账？",
+      "扣除项和最坏月份是多少？",
+      "新支出能否在收入下降时暂停？"
+    ],
+    "related_cases": [
+      "emergency-fund-speculation",
+      "free-trial-auto-renewal"
+    ],
+    "chapter": "01-消费与财务",
+    "updated_at": "2026-09-29"
+  },
+  {
+    "id": "C14",
+    "slug": "borrow-now-earn-later",
+    "title": "先借贷消费，再假设未来收入会补上",
+    "summary": "把未来可能增加的收入提前花掉，让不确定的计划背上确定的还款。",
+    "category": "消费与财务",
+    "category_key": "money",
+    "risk_type": [
+      "money",
+      "opportunity"
+    ],
+    "tags": [
+      "借贷",
+      "现金流",
+      "未来收入"
+    ],
+    "severity": "high",
+    "likelihood": "medium",
+    "reversibility": "hard",
+    "horizon": "long_term",
+    "evidence_grade": "C",
+    "confidence": "medium",
+    "status": "published",
+    "warning": "反面示例｜不确定的收入，不应承担确定的还款。",
+    "wrong_advice": "先把设备、课程或生活升级买下来，收入很快就会追上。",
+    "scenario": "为了转行、创业或维持生活，先用消费贷或信用额度填补收入缺口。",
+    "why_attractive": "借贷能立刻解除压力，未来收入的想象比当前预算更容易让人兴奋。",
+    "hidden_costs": {
+      "money": "利息、手续费和逾期成本会侵蚀未来现金流。",
+      "time": "额外工作和催收沟通挤压恢复时间。",
+      "opportunity": "固定还款降低转向、休息和试错空间。",
+      "other": "压力会让人继续借贷覆盖上一笔还款。"
+    },
+    "failure_mechanism": [
+      "把计划当成收入。",
+      "低估收入波动和还款刚性。",
+      "用短期缓解换取长期选择权下降。"
+    ],
+    "impact": {
+      "affected_groups": [
+        "收入不稳定的人",
+        "刚开始创业的人",
+        "转行者"
+      ],
+      "note": "不同借贷产品的规则与风险不同。"
+    },
+    "score": {
+      "apparent_gain": 4,
+      "cost": 5,
+      "irreversibility_penalty": 3,
+      "low_value_index": 94
+    },
+    "evidence": [
+      {
+        "grade": "C",
+        "type": "case_review",
+        "title": "现金流复盘：未来收入不是现有余额",
+        "url": "",
+        "note": "经验性案例；借贷与债务问题应查询所在地正式帮助渠道。"
+      }
+    ],
+    "stop_loss": [
+      "停止新增非必要借贷，列出全部本金、利率和到期日。",
+      "优先保护基本生活和必要还款，尽早沟通困难。",
+      "把未来计划改成分阶段、可暂停的预算。"
+    ],
+    "safer_alternative": "先用低成本试验验证收入来源，再决定是否扩大固定支出。",
+    "decision_checklist": [
+      "收入没有按计划发生时怎么办？",
+      "最坏月份仍能偿还吗？",
+      "这笔借贷是否买到了可验证的结果？"
+    ],
+    "related_cases": [
+      "emergency-fund-speculation",
+      "sunk-cost-face"
+    ],
+    "chapter": "01-消费与财务",
+    "updated_at": "2026-09-29"
+  },
+  {
+    "id": "C15",
+    "slug": "bulk-discount-hoarding",
+    "title": "把折扣囤货当成省钱",
+    "summary": "为了不“错过优惠”买下用不完的东西，最后用空间、过期和沉没资金换折扣。",
+    "category": "消费与财务",
+    "category_key": "money",
+    "risk_type": [
+      "money",
+      "time",
+      "opportunity"
+    ],
+    "tags": [
+      "囤货",
+      "折扣",
+      "过期成本"
+    ],
+    "severity": "medium",
+    "likelihood": "high",
+    "reversibility": "medium",
+    "horizon": "long_term",
+    "evidence_grade": "C",
+    "confidence": "medium",
+    "status": "published",
+    "warning": "反面示例｜没有使用计划的折扣，就是提前付款。",
+    "wrong_advice": "只要单价更低，多买一些总会用得上。",
+    "scenario": "面对限时折扣、满减和大包装时，用单价替代实际使用量做决定。",
+    "why_attractive": "折扣数字提供即时胜利感，未使用的库存却不会立刻显示损失。",
+    "hidden_costs": {
+      "money": "过期、闲置和重复购买让实际单价反而更高。",
+      "time": "整理、搬运和处理库存占用时间。",
+      "opportunity": "资金被锁在低流动性物品里。",
+      "other": "空间和注意力成为隐形成本。"
+    },
+    "failure_mechanism": [
+      "把单位价格当成总价值。",
+      "忽略需求不确定性和存储成本。",
+      "让促销截止时间替代真实需求。"
+    ],
+    "impact": {
+      "affected_groups": [
+        "小户型家庭",
+        "预算敏感消费者",
+        "经常网购的人"
+      ],
+      "note": "食品、药品和化学品还要考虑储存与有效期。"
+    },
+    "score": {
+      "apparent_gain": 3,
+      "cost": 4,
+      "irreversibility_penalty": 1,
+      "low_value_index": 71
+    },
+    "evidence": [
+      {
+        "grade": "C",
+        "type": "case_review",
+        "title": "消费复盘：折扣与使用率的错位",
+        "url": "",
+        "note": "经验性案例，不代表所有大包装都不划算。"
+      }
+    ],
+    "stop_loss": [
+      "结账前写下预计用完日期和存放位置。",
+      "只买一个使用周期的量，剩余预算保留现金。",
+      "把长期未使用的库存清理掉，停止追踪已经支付的成本。"
+    ],
+    "safer_alternative": "按使用率和现金占用计算总成本，折扣只是最后一项加分。",
+    "decision_checklist": [
+      "如果没有折扣，我本来会买这么多吗？",
+      "用不完时如何转赠、退货或处理？",
+      "占用的现金多久能回到可用状态？"
+    ],
+    "related_cases": [
+      "low-price-repeat-buy",
+      "free-trial-auto-renewal"
+    ],
+    "chapter": "01-消费与财务",
+    "updated_at": "2026-09-29"
+  },
+  {
+    "id": "C16",
+    "slug": "password-reuse-for-convenience",
+    "title": "把密码复用当成方便",
+    "summary": "为了省记忆成本，在多个服务复用同一组凭证，把一个泄露点变成一串连锁风险。",
+    "category": "信息与隐私",
+    "category_key": "privacy",
+    "risk_type": [
+      "privacy",
+      "money",
+      "reputation"
+    ],
+    "tags": [
+      "密码复用",
+      "账号安全",
+      "凭证"
+    ],
+    "severity": "critical",
+    "likelihood": "medium",
+    "reversibility": "hard",
+    "horizon": "immediate",
+    "evidence_grade": "A",
+    "confidence": "high",
+    "status": "published",
+    "warning": "反面示例｜一个服务的泄露，不应自动打开其他服务。",
+    "wrong_advice": "重要账号记一个强密码，其他地方都复用它。",
+    "scenario": "多个网站、邮箱、支付和开发平台使用相同或高度相似的密码。",
+    "why_attractive": "记忆和输入成本最低，直到某个服务发生泄露。",
+    "hidden_costs": {
+      "money": "支付、云服务和购物账户可能被连锁访问。",
+      "time": "需要同时找回、轮换和核对多个账户。",
+      "opportunity": "事故响应会打断工作和交付。",
+      "other": "邮箱一旦失守，可能成为重置其他账户的入口。"
+    },
+    "failure_mechanism": [
+      "把不同服务的安全边界当成一个边界。",
+      "忽略历史泄露和弱密码猜测风险。",
+      "没有启用多因素认证和恢复方式。"
+    ],
+    "impact": {
+      "affected_groups": [
+        "多设备用户",
+        "开发者",
+        "家庭共享账户"
+      ],
+      "note": "密码管理器和多因素认证应结合服务能力选择。"
+    },
+    "score": {
+      "apparent_gain": 5,
+      "cost": 5,
+      "irreversibility_penalty": 3,
+      "low_value_index": 99
+    },
+    "evidence": [
+      {
+        "grade": "A",
+        "type": "official",
+        "title": "CISA：Use Strong Passwords",
+        "url": "https://www.cisa.gov/secure-our-world/use-strong-passwords",
+        "note": "官方建议使用强且唯一的密码，并配合密码管理器和多因素认证。"
+      }
+    ],
+    "stop_loss": [
+      "先保护邮箱、支付和开发平台等高价值账户。",
+      "为每项服务使用唯一凭证并启用多因素认证。",
+      "发现泄露时从提供方和登录记录开始核查，不只改当前页面。"
+    ],
+    "safer_alternative": "使用密码管理器生成唯一凭证，保留离线恢复方式和安全联系人。",
+    "decision_checklist": [
+      "这个密码是否在别处使用过？",
+      "账号是否有多因素认证？",
+      "恢复邮箱和设备是否仍可控？"
+    ],
+    "related_cases": [
+      "public-repo-secret",
+      "headline-only-decisions"
+    ],
+    "chapter": "04-信息与隐私",
+    "updated_at": "2026-09-29"
+  },
+  {
+    "id": "C17",
+    "slug": "overshare-as-marketing",
+    "title": "把公开个人信息当成免费的营销资产",
+    "summary": "为了获得流量，把联系方式、行程、家庭和工作细节一次性暴露，之后再用时间和隐私补救。",
+    "category": "信息与隐私",
+    "category_key": "privacy",
+    "risk_type": [
+      "privacy",
+      "reputation",
+      "time"
+    ],
+    "tags": [
+      "过度公开",
+      "个人信息",
+      "流量"
+    ],
+    "severity": "high",
+    "likelihood": "medium",
+    "reversibility": "hard",
+    "horizon": "long_term",
+    "evidence_grade": "C",
+    "confidence": "medium",
+    "status": "published",
+    "warning": "反面示例｜公开信息一旦被复制，删除不等于收回。",
+    "wrong_advice": "先把所有真实细节发出来，流量起来后再考虑隐私。",
+    "scenario": "发布作品、求职、直播或经营个人品牌时，把可识别信息混在内容和截图里。",
+    "why_attractive": "真实细节更容易引发互动，隐私风险却是延迟出现的。",
+    "hidden_costs": {
+      "money": "骚扰、诈骗和账号恢复可能带来直接损失。",
+      "time": "需要删除、申诉、解释和持续监控。",
+      "opportunity": "过度暴露会限制未来换工作、迁居或休息的自由。",
+      "other": "家人、同事和客户可能被连带识别。"
+    },
+    "failure_mechanism": [
+      "把传播速度当成可控范围。",
+      "忽略截图、缓存和二次转载。",
+      "没有区分公开身份、工作身份和私人身份。"
+    ],
+    "impact": {
+      "affected_groups": [
+        "内容创作者",
+        "求职者",
+        "小商家"
+      ],
+      "note": "不同平台的公开范围和删除机制不同。"
+    },
+    "score": {
+      "apparent_gain": 4,
+      "cost": 4,
+      "irreversibility_penalty": 3,
+      "low_value_index": 90
+    },
+    "evidence": [
+      {
+        "grade": "C",
+        "type": "case_review",
+        "title": "隐私复盘：公开内容的长期可见性",
+        "url": "",
+        "note": "经验性案例；具体平台安全设置需要逐项核对。"
+      }
+    ],
+    "stop_loss": [
+      "撤下仍可定位住址、行程、联系方式或账户恢复线索的内容。",
+      "把公开内容与工作、家庭、支付身份分层。",
+      "为必须公开的信息设置最小化和定期复核。"
+    ],
+    "safer_alternative": "公开作品和方法，不公开能定位个人生活的组合信息。",
+    "decision_checklist": [
+      "陌生人能否据此推断我在哪里？",
+      "这条内容被永久保存后还能接受吗？",
+      "是否会牵连家人、客户或同事？"
+    ],
+    "related_cases": [
+      "public-repo-secret",
+      "password-reuse-for-convenience"
+    ],
+    "chapter": "04-信息与隐私",
+    "updated_at": "2026-09-29"
+  },
+  {
+    "id": "C18",
+    "slug": "sleep-debt-caffeine",
+    "title": "用咖啡和周末补觉掩盖长期睡眠不足",
+    "summary": "把清醒感当成恢复，把长期欠下的睡眠债留到身体和注意力替自己结算。",
+    "category": "健康误区",
+    "category_key": "health",
+    "risk_type": [
+      "health",
+      "time",
+      "reputation"
+    ],
+    "tags": [
+      "睡眠",
+      "咖啡因",
+      "恢复"
+    ],
+    "severity": "high",
+    "likelihood": "high",
+    "reversibility": "medium",
+    "horizon": "long_term",
+    "evidence_grade": "A",
+    "confidence": "high",
+    "status": "published",
+    "warning": "反面示例｜提神不是恢复，持续疲劳需要重新安排睡眠和求助。",
+    "wrong_advice": "平日少睡一点，周末再补回来就行。",
+    "scenario": "长期依赖咖啡因、夜间工作和周末补觉维持日常节奏。",
+    "why_attractive": "咖啡因能快速改善主观清醒，睡眠损失的影响却常被延迟感知。",
+    "hidden_costs": {
+      "money": "迟到、失误和健康管理成本可能上升。",
+      "time": "注意力下降会拉长原本简单的任务。",
+      "opportunity": "错过学习、运动和关系中的高质量时间。",
+      "other": "疲劳驾驶和工作安全风险会被低估。"
+    },
+    "failure_mechanism": [
+      "把主观清醒误当成生理恢复。",
+      "长期节奏与个体需求不匹配。",
+      "用周末补觉掩盖工作安排和环境问题。"
+    ],
+    "impact": {
+      "affected_groups": [
+        "夜班工作者",
+        "高压行业从业者",
+        "长期照护者"
+      ],
+      "note": "睡眠需求与作息受个体和工作条件影响。"
+    },
+    "score": {
+      "apparent_gain": 4,
+      "cost": 5,
+      "irreversibility_penalty": 2,
+      "low_value_index": 92
+    },
+    "evidence": [
+      {
+        "grade": "A",
+        "type": "official",
+        "title": "CDC：About Sleep and Sleep Health",
+        "url": "https://www.cdc.gov/sleep/about_sleep/how_much_sleep.html",
+        "note": "官方材料说明不同年龄的睡眠需求以及睡眠对健康的重要性。"
+      }
+    ],
+    "stop_loss": [
+      "连续疲劳、打盹或影响安全时，优先停止高风险操作。",
+      "记录一周睡眠、咖啡因和精神状态，找出可调整的时段。",
+      "长期失眠或明显影响生活时，咨询正规医疗渠道。"
+    ],
+    "safer_alternative": "先固定可执行的睡眠窗口，再调整工作量、光照、咖啡因和夜间刺激。",
+    "decision_checklist": [
+      "我是在恢复，还是只是暂时清醒？",
+      "疲劳是否已经影响安全和判断？",
+      "哪个固定承诺需要重新协商？"
+    ],
+    "related_cases": [
+      "overtime-as-output",
+      "headline-only-decisions"
+    ],
+    "chapter": "05-健康误区",
+    "updated_at": "2026-09-29"
+  },
+  {
+    "id": "C19",
+    "slug": "meeting-count-as-collaboration",
+    "title": "把会议数量当成协作质量",
+    "summary": "日历越来越满，真正的决策、交付和责任边界却越来越模糊。",
+    "category": "职场与学习",
+    "category_key": "work",
+    "risk_type": [
+      "time",
+      "opportunity",
+      "reputation"
+    ],
+    "tags": [
+      "会议",
+      "协作",
+      "决策"
+    ],
+    "severity": "medium",
+    "likelihood": "high",
+    "reversibility": "easy",
+    "horizon": "long_term",
+    "evidence_grade": "C",
+    "confidence": "medium",
+    "status": "published",
+    "warning": "反面示例｜没有决策、产出和负责人，会议只是同步幻觉。",
+    "wrong_advice": "把所有人拉进会议，信息就不会遗漏。",
+    "scenario": "项目不清楚谁决策、谁执行，于是用更多会议替代清晰的责任设计。",
+    "why_attractive": "邀请更多人看起来更稳妥，会议也能立刻制造“事情在推进”的感觉。",
+    "hidden_costs": {
+      "money": "多人时间的机会成本被低估。",
+      "time": "切换、准备和会后追踪挤占深度工作。",
+      "opportunity": "真正需要安静思考的任务被推迟。",
+      "other": "责任被平均分散，问题发生时无人真正负责。"
+    },
+    "failure_mechanism": [
+      "把信息共享误认为协作完成。",
+      "没有预先定义决策和会后产物。",
+      "通过拉人降低个人承担不确定性的压力。"
+    ],
+    "impact": {
+      "affected_groups": [
+        "跨团队项目",
+        "远程团队",
+        "管理者"
+      ],
+      "note": "紧急事件和高风险决策仍可能需要同步会议。"
+    },
+    "score": {
+      "apparent_gain": 3,
+      "cost": 4,
+      "irreversibility_penalty": 0,
+      "low_value_index": 68
+    },
+    "evidence": [
+      {
+        "grade": "C",
+        "type": "case_review",
+        "title": "项目复盘：从会议清单回到决策清单",
+        "url": "",
+        "note": "经验性案例，具体会议制度应结合团队任务设计。"
+      }
+    ],
+    "stop_loss": [
+      "每个会议提前写清决策、输入和会后产物。",
+      "能异步完成的同步改为短文档或评论。",
+      "连续两周没有产出的例会，暂停并复盘。"
+    ],
+    "safer_alternative": "用决策记录、责任人和截止时间连接异步材料与少量必要会议。",
+    "decision_checklist": [
+      "不召开会议，谁会被卡住？",
+      "会后要留下什么可复用产物？",
+      "哪些人只需要被告知而不是被拉进来？"
+    ],
+    "related_cases": [
+      "overtime-as-output",
+      "tool-system-before-problem"
+    ],
+    "chapter": "02-职场与学习",
+    "updated_at": "2026-09-29"
+  },
+  {
+    "id": "C20",
+    "slug": "instant-reply-as-reliability",
+    "title": "把秒回消息当成职业可靠性",
+    "summary": "为了证明自己在线，持续打断深度工作和休息，却没有更稳定地交付结果。",
+    "category": "职场与学习",
+    "category_key": "work",
+    "risk_type": [
+      "time",
+      "health",
+      "reputation"
+    ],
+    "tags": [
+      "秒回",
+      "通知",
+      "异步协作"
+    ],
+    "severity": "medium",
+    "likelihood": "high",
+    "reversibility": "easy",
+    "horizon": "long_term",
+    "evidence_grade": "C",
+    "confidence": "medium",
+    "status": "published",
+    "warning": "反面示例｜可靠性来自可预期的交付，不是全天候在线。",
+    "wrong_advice": "任何消息都要马上回复，否则别人会觉得你不负责。",
+    "scenario": "团队没有响应时间约定，个人只能靠即时回复换取安全感。",
+    "why_attractive": "回复是最容易被看见的努力；真正的交付需要更长时间才能显现。",
+    "hidden_costs": {
+      "money": "被打断会降低高价值工作的有效产出。",
+      "time": "上下文切换和重新进入状态需要时间。",
+      "opportunity": "难以形成可复用的深度工作块。",
+      "other": "持续通知让休息和家庭时间被侵蚀。"
+    },
+    "failure_mechanism": [
+      "把可见在线状态当作服务质量。",
+      "没有定义紧急事项的通道和时限。",
+      "用即时反馈替代目标和验收。"
+    ],
+    "impact": {
+      "affected_groups": [
+        "远程工作者",
+        "客服与项目经理",
+        "多时区团队"
+      ],
+      "note": "紧急值班岗位需要单独的响应约定。"
+    },
+    "score": {
+      "apparent_gain": 3,
+      "cost": 4,
+      "irreversibility_penalty": 1,
+      "low_value_index": 73
+    },
+    "evidence": [
+      {
+        "grade": "C",
+        "type": "case_review",
+        "title": "协作复盘：响应时限比秒回更可靠",
+        "url": "",
+        "note": "经验性案例，值班岗位应以正式 SLA 为准。"
+      }
+    ],
+    "stop_loss": [
+      "和团队约定普通、重要、紧急三种响应时限。",
+      "关闭非紧急推送，设置集中处理消息的时间块。",
+      "把进度、风险和下一步写进可见文档。"
+    ],
+    "safer_alternative": "用响应承诺、状态更新和可预测交付替代全天候在线。",
+    "decision_checklist": [
+      "对方真正需要的是回复还是结果？",
+      "这件事的紧急等级是什么？",
+      "我能否给出明确的下一次更新时间？"
+    ],
+    "related_cases": [
+      "overtime-as-output",
+      "meeting-count-as-collaboration"
+    ],
+    "chapter": "02-职场与学习",
+    "updated_at": "2026-09-29"
+  },
+  {
+    "id": "C21",
+    "slug": "hot-tool-chasing",
+    "title": "只学热门工具，不练基础能力",
+    "summary": "不断追逐新工具的教程和榜单，却没有建立能跨工具迁移的判断、表达和解决问题能力。",
+    "category": "工具与效率",
+    "category_key": "tools",
+    "risk_type": [
+      "time",
+      "money",
+      "opportunity"
+    ],
+    "tags": [
+      "工具追新",
+      "基础能力",
+      "迁移成本"
+    ],
+    "severity": "medium",
+    "likelihood": "high",
+    "reversibility": "easy",
+    "horizon": "long_term",
+    "evidence_grade": "C",
+    "confidence": "medium",
+    "status": "published",
+    "warning": "反面示例｜工具更新很快，基础能力和可迁移资产更慢。",
+    "wrong_advice": "哪个工具最火，就先把哪个学会。",
+    "scenario": "因为榜单、折扣或社交压力不断切换工具和技术栈。",
+    "why_attractive": "新工具有明确教程、社区和成就反馈，比长期基础训练更容易开始。",
+    "hidden_costs": {
+      "money": "订阅、课程和迁移费用不断增加。",
+      "time": "重复学习界面和配置，核心能力没有累积。",
+      "opportunity": "作品、方法和领域理解被切碎。",
+      "other": "对新工具的依赖增加切换焦虑。"
+    },
+    "failure_mechanism": [
+      "把工具熟练度误当成问题解决能力。",
+      "追逐新鲜感而非稳定需求。",
+      "没有积累可迁移的作品和判断框架。"
+    ],
+    "impact": {
+      "affected_groups": [
+        "开发者",
+        "内容创作者",
+        "知识工作者"
+      ],
+      "note": "新工具在明确解决问题时仍可能非常划算。"
+    },
+    "score": {
+      "apparent_gain": 4,
+      "cost": 4,
+      "irreversibility_penalty": 0,
+      "low_value_index": 76
+    },
+    "evidence": [
+      {
+        "grade": "C",
+        "type": "case_review",
+        "title": "工具复盘：从榜单学习回到任务学习",
+        "url": "",
+        "note": "经验性案例，不否定工具学习本身。"
+      }
+    ],
+    "stop_loss": [
+      "冻结工具清单，先用现有工具完成一个真实交付。",
+      "把学习目标改成“能解决哪类问题”。",
+      "保存开放格式和可迁移流程，降低换工具成本。"
+    ],
+    "safer_alternative": "先练写作、数据、沟通、分析和领域知识，再选择能放大它们的工具。",
+    "decision_checklist": [
+      "这个工具解决哪个已确认的问题？",
+      "不用它时，基础流程是否仍然成立？",
+      "我留下的资产能否迁移到下一款工具？"
+    ],
+    "related_cases": [
+      "tool-system-before-problem",
+      "credential-hoarding"
+    ],
+    "chapter": "03-工具与效率",
+    "updated_at": "2026-09-29"
+  },
+  {
+    "id": "C22",
+    "slug": "switch-without-retro",
+    "title": "一次失败后立刻换方向，不复盘失败机制",
+    "summary": "用换赛道缓解挫败感，却把真正的问题一起带到下一个项目。",
+    "category": "低效决策",
+    "category_key": "decisions",
+    "risk_type": [
+      "time",
+      "money",
+      "opportunity",
+      "reputation"
+    ],
+    "tags": [
+      "换方向",
+      "复盘",
+      "失败机制"
+    ],
+    "severity": "high",
+    "likelihood": "medium",
+    "reversibility": "medium",
+    "horizon": "long_term",
+    "evidence_grade": "C",
+    "confidence": "medium",
+    "status": "published",
+    "warning": "反面示例｜改变方向前，先确认失败来自目标、执行还是环境。",
+    "wrong_advice": "这条路不行就立刻换下一条，行动比分析重要。",
+    "scenario": "项目、求职、学习或关系受挫后，没有记录证据就迅速重启。",
+    "why_attractive": "换方向能带来新鲜感和希望，也暂时避开承认自己哪里做错。",
+    "hidden_costs": {
+      "money": "新项目重新支付试错成本。",
+      "time": "重复走过相似的错误路径。",
+      "opportunity": "没有把已有资产迁移到更合适的目标。",
+      "other": "频繁重启会削弱可信度和长期信心。"
+    },
+    "failure_mechanism": [
+      "把结果失败等同于方向失败。",
+      "没有区分可修复变量与不可控变量。",
+      "用新计划逃避旧证据。"
+    ],
+    "impact": {
+      "affected_groups": [
+        "创业者",
+        "转行者",
+        "长期自学者"
+      ],
+      "note": "有些环境确实需要及时退出，关键是保留退出依据。"
+    },
+    "score": {
+      "apparent_gain": 3,
+      "cost": 4,
+      "irreversibility_penalty": 1,
+      "low_value_index": 75
+    },
+    "evidence": [
+      {
+        "grade": "C",
+        "type": "case_review",
+        "title": "决策复盘：把失败拆成可迁移信息",
+        "url": "",
+        "note": "经验性案例；不替代专业项目评估。"
+      }
+    ],
+    "stop_loss": [
+      "写出目标、假设、证据和已发生的偏差。",
+      "只改变一个变量做小规模复试。",
+      "把退出条件与下一次验证日期写下来。"
+    ],
+    "safer_alternative": "用小实验验证关键假设，再决定继续、调整或退出。",
+    "decision_checklist": [
+      "失败发生在哪个环节？",
+      "哪些资产可以迁移？",
+      "下一步最小验证是什么？"
+    ],
+    "related_cases": [
+      "sunk-cost-face",
+      "tool-system-before-problem"
+    ],
+    "chapter": "06-低效决策",
+    "updated_at": "2026-09-29"
+  },
+  {
+    "id": "C23",
+    "slug": "silent-treatment-as-boundary",
+    "title": "用冷处理代替边界沟通",
+    "summary": "希望对方自己猜到不满，结果让冲突扩大、事实模糊、关系成本上升。",
+    "category": "关系与沟通",
+    "category_key": "relationships",
+    "risk_type": [
+      "time",
+      "reputation",
+      "opportunity"
+    ],
+    "tags": [
+      "冷处理",
+      "边界",
+      "冲突"
+    ],
+    "severity": "high",
+    "likelihood": "medium",
+    "reversibility": "hard",
+    "horizon": "long_term",
+    "evidence_grade": "C",
+    "confidence": "medium",
+    "status": "published",
+    "warning": "反面示例｜暂停沟通可以是保护，惩罚式消失不是边界。",
+    "wrong_advice": "不回应就是最有力的表达，对方自然会明白。",
+    "scenario": "冲突、失望或需要拒绝时，通过消失、已读不回和模糊惩罚让对方猜测。",
+    "why_attractive": "沉默能暂时减少正面冲突，也让自己保留控制感。",
+    "hidden_costs": {
+      "money": "关系破裂或合作中断可能造成直接损失。",
+      "time": "双方把精力花在猜测和解释上。",
+      "opportunity": "错过澄清误会和重建规则的窗口。",
+      "other": "长期沉默会制造不安全和权力不对等。"
+    },
+    "failure_mechanism": [
+      "把暂停恢复时间和惩罚性沉默混为一谈。",
+      "让对方承担猜测需求的全部成本。",
+      "回避清晰表达带来的短期不适。"
+    ],
+    "impact": {
+      "affected_groups": [
+        "亲密关系",
+        "朋友与合伙人",
+        "团队协作"
+      ],
+      "note": "涉及威胁、控制或安全风险时，应优先保护自己并寻求支持。"
+    },
+    "score": {
+      "apparent_gain": 3,
+      "cost": 4,
+      "irreversibility_penalty": 2,
+      "low_value_index": 84
+    },
+    "evidence": [
+      {
+        "grade": "C",
+        "type": "case_review",
+        "title": "关系复盘：把暂停沟通变成清晰边界",
+        "url": "",
+        "note": "经验性案例，不对具体关系作诊断。"
+      }
+    ],
+    "stop_loss": [
+      "明确说出需要暂停多久、何时恢复沟通。",
+      "把边界写成自己的行动，而不是要求对方猜。",
+      "反复出现控制、威胁或报复时，优先建立外部支持。"
+    ],
+    "safer_alternative": "用“我需要什么、我会做什么、我们何时再谈”表达边界。",
+    "decision_checklist": [
+      "我是为了恢复而暂停，还是为了惩罚？",
+      "对方知道什么时候能得到回应吗？",
+      "如果对方不同意，我的安全计划是什么？"
+    ],
+    "related_cases": [
+      "relationship-debt-test",
+      "sunk-cost-face"
+    ],
+    "chapter": "07-关系与沟通",
+    "updated_at": "2026-09-29"
+  },
+  {
+    "id": "C24",
+    "slug": "streak-as-progress",
+    "title": "把连续打卡天数当成真正进展",
+    "summary": "每天都完成形式动作，却没有验证能力、健康或结果是否真的改善。",
+    "category": "低效决策",
+    "category_key": "decisions",
+    "risk_type": [
+      "time",
+      "opportunity",
+      "health"
+    ],
+    "tags": [
+      "打卡",
+      "指标",
+      "结果幻觉"
+    ],
+    "severity": "medium",
+    "likelihood": "high",
+    "reversibility": "easy",
+    "horizon": "long_term",
+    "evidence_grade": "C",
+    "confidence": "medium",
+    "status": "published",
+    "warning": "反面示例｜连续性是过程信号，不是结果证明。",
+    "wrong_advice": "只要连续天数不断，目标迟早会自动完成。",
+    "scenario": "学习、运动、写作或理财用连续次数作为唯一成功指标。",
+    "why_attractive": "数字连续、反馈及时、社交展示容易；真正结果通常更慢且不稳定。",
+    "hidden_costs": {
+      "money": "为了维持打卡购买课程、设备或会员。",
+      "time": "时间被形式动作占用，核心任务反而减少。",
+      "opportunity": "忽略目标变化和方法失效。",
+      "other": "一旦中断，容易把一次断档解释成全部失败。"
+    },
+    "failure_mechanism": [
+      "把可量化动作误当成目标。",
+      "只追踪输入，不追踪质量和结果。",
+      "为了不破 streak 继续低价值动作。"
+    ],
+    "impact": {
+      "affected_groups": [
+        "自学者",
+        "健身和健康管理者",
+        "个人项目负责人"
+      ],
+      "note": "连续性可以是有用信号，但应与结果指标一起看。"
+    },
+    "score": {
+      "apparent_gain": 3,
+      "cost": 3,
+      "irreversibility_penalty": 0,
+      "low_value_index": 62
+    },
+    "evidence": [
+      {
+        "grade": "C",
+        "type": "case_review",
+        "title": "指标复盘：从连续打卡回到真实结果",
+        "url": "",
+        "note": "经验性案例，不否定习惯追踪工具。"
+      }
+    ],
+    "stop_loss": [
+      "每周增加一个结果指标，例如作品、能力测试或恢复状态。",
+      "允许计划性休息和重新设计，不把断档视为道德失败。",
+      "连续两周无结果时，暂停打卡并复盘方法。"
+    ],
+    "safer_alternative": "用“过程指标 + 结果指标 + 复盘周期”三件套追踪长期目标。",
+    "decision_checklist": [
+      "这个动作与目标之间的机制是什么？",
+      "结果是否被独立验证？",
+      "如果今天断档，真正损失是什么？"
+    ],
+    "related_cases": [
+      "credential-hoarding",
+      "switch-without-retro"
+    ],
+    "chapter": "06-低效决策",
+    "updated_at": "2026-09-29"
   }
 ]

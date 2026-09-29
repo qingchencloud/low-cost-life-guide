@@ -30,6 +30,7 @@ const riskLabels = {
 };
 
 const severityLabels = { critical: "严重", high: "高", medium: "中", low: "低" };
+let lastFocusedElement = null;
 const severityRank = { critical: 4, high: 3, medium: 2, low: 1 };
 const evidenceRank = { A: 3, B: 2, C: 1 };
 
@@ -139,7 +140,7 @@ function renderList() {
   $("#caseList").innerHTML = items.map((item) => `
     <article class="case-row" data-open-case="${escapeHTML(item.slug)}" tabindex="0" role="button" aria-label="查看 ${escapeHTML(item.title)}">
       <span class="case-id">${escapeHTML(item.id)}</span>
-      <div><h3>${escapeHTML(item.title)}</h3><p>${escapeHTML(item.summary)}</p></div>
+      <div><h3>${escapeHTML(item.title)}</h3><p>${escapeHTML(item.summary)}</p><div class="case-mobile-meta"><span class="mobile-index">指数 ${item.score.low_value_index}</span><span>${escapeHTML(severityLabels[item.severity] || item.severity)}风险</span><span>${escapeHTML(item.evidence_grade)} 级</span></div></div>
       <div class="case-meta"><strong>${item.score.low_value_index}</strong>低性价比指数</div>
       <div class="case-meta"><strong>${escapeHTML(item.evidence_grade)}</strong>证据等级</div>
       <span class="case-arrow">›</span>
@@ -217,9 +218,11 @@ function detailMarkup(item) {
 function openCase(slug, updateHash = true) {
   const item = state.cases.find((candidate) => candidate.slug === slug);
   if (!item) return;
+  lastFocusedElement = document.activeElement;
   $("#drawerContent").innerHTML = detailMarkup(item);
   $("#detailDrawer").classList.add("open");
   $("#detailDrawer").setAttribute("aria-hidden", "false");
+  $("#detailDrawer").setAttribute("aria-modal", "true");
   $("#drawerBackdrop").hidden = false;
   document.body.style.overflow = "hidden";
   if (updateHash) history.replaceState({}, "", `${location.pathname}${location.search}#case=${encodeURIComponent(slug)}`);
@@ -230,9 +233,11 @@ function openCase(slug, updateHash = true) {
 function closeCase(clearHash = true) {
   $("#detailDrawer").classList.remove("open");
   $("#detailDrawer").setAttribute("aria-hidden", "true");
+  $("#detailDrawer").setAttribute("aria-modal", "false");
   $("#drawerBackdrop").hidden = true;
   document.body.style.overflow = "";
   if (clearHash) history.replaceState({}, "", `${location.pathname}${location.search}`);
+  if (lastFocusedElement && typeof lastFocusedElement.focus === "function") lastFocusedElement.focus();
 }
 
 function bindOpenCase() {
@@ -263,6 +268,7 @@ function bindControls() {
   }));
   $("#closeDrawer").addEventListener("click", () => closeCase());
   $("#drawerBackdrop").addEventListener("click", () => closeCase());
+  $("#printButton")?.addEventListener("click", () => window.print());
   document.addEventListener("keydown", (event) => {
     if (event.key === "/" && document.activeElement?.tagName !== "INPUT") { event.preventDefault(); $("#searchInput").focus(); }
     if (event.key === "Escape") closeCase();
@@ -282,6 +288,7 @@ async function init() {
     setStats();
     bindControls();
     render();
+    if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch((error) => console.warn("service worker registration skipped", error));
     const match = location.hash.match(/^#case=(.+)$/);
     if (match) openCase(decodeURIComponent(match[1]), false);
   } catch (error) {
